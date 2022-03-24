@@ -169,9 +169,9 @@
 }
 
 .title {
-  font-family: var(--secondary-font);
-  font-size: 36px;
-  line-height: calc(54 / 36);
+  font-family: var(--primary-font);
+  font-size: 48px;
+  line-height: calc(56 / 48);
   font-weight: 700;
   letter-spacing: 0em;
   text-align: center;
@@ -281,6 +281,25 @@
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
+  color: var(--color-primary);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.navigation__link:hover, .navigation__link:focus {
+  color: var(--color-accent);
+}
+
+.text {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: var(--color-primary);
 }
 
 /* Глобальные стили страницы */
@@ -343,8 +362,6 @@ address {
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
-  /* !удалить */
-  outline: 1px solid green;
 }
 
 .section {
@@ -424,20 +441,29 @@ address {
   letter-spacing: 0em;
   color: var(--color-primary);
   margin-right: 40px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--transition-time);
+          transition-duration: var(--transition-time);
+  -webkit-transition-timing-function: var(--transition-function);
+          transition-timing-function: var(--transition-function);
+}
+
+.header__phone:hover, .header__phone:focus {
+  color: var(--color-accent);
 }
 
 .hero {
   max-width: 1920px;
-  height: 900px;
+  height: 604px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 150px;
+  padding-top: 192px;
+  padding-bottom: 192px;
   text-align: center;
   color: var(--color-white);
-  background-color: var(--color-bg);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url("../img/hero-bg@1x.jpg");
-  background-image: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url("../img/hero-bg@1x.jpg");
+  background-color: var(--color-brand);
+  background-image: url("../img/hero-bg.jpg");
   background-position: center, center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -445,13 +471,27 @@ address {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#282828), to(rgba(40, 40, 40, 0))), url("../img/hero-bg@2x.jpg");
-    background-image: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url("../img/hero-bg@2x.jpg");
+    background-image: url("../img/hero-bg@2x.jpg");
   }
 }
 
-.hero__button:not(:last-child) {
-  margin-right: 30px;
+.hero__wrapper {
+  width: 310px;
+  text-align: left;
+}
+
+.hero__title,
+.hero__text {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.hero__text {
+  color: var(--color-white);
+}
+
+.hero__button {
+  min-width: 170px;
 }
 
 .footer {

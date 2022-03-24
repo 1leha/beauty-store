@@ -1,30 +1,41 @@
 .hero {
   max-width: 1920px;
-  height: 900px;
+  height: 604px;
 
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 150px;
+  padding-top: 192px;
+  padding-bottom: 192px;
 
   text-align: center;
   color: var(--color-white);
 
-  background-color: var(--color-bg);
-  background-image: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%),
-    url('../img/hero-bg@1x.jpg');
+  background-color: var(--color-brand);
+  background-image: url('../img/hero-bg.jpg');
   background-position: center, center;
   background-size: cover;
   background-repeat: no-repeat;
 
   @include pixelRatio {
-    background-image: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%),
-      url('../img/hero-bg@2x.jpg');
+    background-image: url('../img/hero-bg@2x.jpg');
   }
 }
 
+.hero__wrapper {
+  width: 310px;
+  text-align: left;
+}
+
+.hero__title,
+.hero__text {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.hero__text {
+  color: var(--color-white);
+}
+
 .hero__button {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  min-width: 170px;
 }
