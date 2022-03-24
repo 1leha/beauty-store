@@ -32,6 +32,11 @@
   margin-bottom: 50px;
 }
 
+.hero__title {
+  @include font(48, 56, 700, 0);
+  color: var(--color-white);
+}
+
 .hero__text {
   color: var(--color-white);
 }

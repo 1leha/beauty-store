@@ -1,9 +1,7 @@
 .title {
   font-family: var(--primary-font);
-  @include font(48, 56, 700, 0);
-  text-align: center;
+  @include font(24, 28, 700, 0);
+  text-align: left;
 
-  color: var(--color-white);
+  color: var(--color-primary);
 }
-
-
