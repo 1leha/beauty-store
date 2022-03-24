@@ -1,0 +1,30 @@
+.top-menu {
+  height: 50px;
+  background-color: var(--color-bg);
+}
+
+.top-menu__list {
+  @include flexAlign();
+}
+
+.top-menu__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.top-menu__link {
+  display: inline-block;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  @include font(14, 16, 400, 0);
+
+  color: var(--color-secondary);
+
+  @include projTransitions(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}

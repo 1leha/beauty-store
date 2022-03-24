@@ -1,0 +1,15 @@
+.navigation__list {
+  @include flexAlign();
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
