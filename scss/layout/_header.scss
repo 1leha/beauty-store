@@ -47,15 +47,3 @@
   }
 }
 
-.header__phone {
-  @include font(16, 19, 400, 0);
-  color: var(--color-primary);
-  margin-right: 40px;
-
-  @include projTransitions(color);
-
-  &:hover,
-  &:focus {
-    color: var(--color-accent);
-  }
-}

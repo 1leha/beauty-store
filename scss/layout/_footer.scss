@@ -1,107 +1,49 @@
-.footer {
-  background-color: var(--color-brand);
+.footer-categories {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  border-bottom: 1px solid var(--color-third);
 }
 
-.footer__container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.menu-container {
-  width: 922px;
-  margin: 0 auto;
-}
-
-.footer__menu {
+.footer-categories__list {
   @include flexAlign($justify: space-between);
-  @include font(14, 21, 400, 0);
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
-.footer__link {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: var(--color-white);
+.footer-contacts {
+  padding-top: 38px;
+  padding-bottom: 38px;
 
-  &:hover,
-  &:focus {
-    color: var(--color-primary);
-  }
-  @include projTransitions(color);
+  @include flexAlign();
 }
 
-.contacts {
+.footer-contacts__social {
+  margin-right: auto;
+}
+
+.footer-contacts__address {
+  margin-right: 105px;
+
+  @include font(14, 16, 400, 0);
+  color: var(--color-primary);
+}
+
+.footer-legals {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--color-third);
+}
+
+.footer-legals__container {
   @include flexAlign($justify: space-between);
-  @include font(14, 21, 600, 0);
-  text-transform: uppercase;
 }
 
-.contacts__item {
-  display: block;
-  height: 60px;
-  position: relative;
-  &:not(:last-child) {
-    // margin-right: 115px;
-    &::after {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      top: 0;
-      left: 100%;
-      transform: translateX(53px);
+.footer-legals__link {
+  @include font(12, 14, 400, 0);
 
-      background-color: var(--color-white);
-    }
-  }
-}
-
-.contacts__link {
-  display: inline-block;
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  height: 100%;
-  color: var(--color-white);
+  color: var(--color-fourth);
 
   &:hover,
   &:focus {
-    color: var(--color-primary);
-  }
-  @include projTransitions(color);
-}
-
-.social {
-  @include flexAlign($justify: space-around);
-}
-
-.social__item {
-  display: inline-block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  &:not(:last-child) {
-    margin-right: 36px;
-  }
-}
-
-.social__link {
-  color: var(--color-white);
-
-  &:hover,
-  &:focus {
-    color: var(--color-primary);
-  }
-  @include projTransitions(color);
-}
-
-.footer__wrapper {
-  border-top: 1px solid var(--color-white);
-  border-bottom: 1px solid var(--color-white);
-
-  &--bottom {
-    border-top: none;
+    color: var(--color-accent);
   }
 }
