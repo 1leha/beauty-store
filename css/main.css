@@ -324,12 +324,12 @@
 }
 
 .popular-categories__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .popular-categories__link {
   font-size: 12px;
-  line-height: calc(28 / 12);
+  line-height: calc(16 / 12);
   font-weight: 400;
   letter-spacing: 0em;
   color: var(--color-fourth);

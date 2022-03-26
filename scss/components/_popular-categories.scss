@@ -28,12 +28,12 @@
 
 .popular-categories__item {
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
 .popular-categories__link {
-  @include font(12, 28, 400, 0);
+  @include font(12, 16, 400, 0);
   color: var(--color-fourth);
 
   &:hover,
