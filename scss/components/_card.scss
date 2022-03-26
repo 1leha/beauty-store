@@ -10,6 +10,7 @@
 }
 
 .card__thumb {
+  display: block;
   width: 205px;
   height: 166px;
   margin-bottom: 20px;
@@ -28,6 +29,8 @@
 }
 
 .card__text {
+  display: block;
+
   color: var(--color-secondary);
 }
 
